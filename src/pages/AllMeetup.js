@@ -1,12 +1,12 @@
 
+import React from "react"
 
 
 
-
-function AllMeetup(){
+const AllMeetup = () =>{
     return (
-        <div>All meetup</div>
+        <div> <p> All meetup</p> </div>
     )
 }
 
-export default AllMeetup
+export default AllMeetup;

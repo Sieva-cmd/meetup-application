@@ -1,24 +1,29 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import {Route} from 'react-router-dom'
+import {Routes, Route } from 'react-router-dom';
 import AllMeetup from './pages/AllMeetup';
 import NewMeetup from './pages/NewMeetup';
 import Favourites from './pages/Favourites';
-import Favourites from './pages/Favourites';
 
-function App() {
+
+
+const  App =() => {
   return (
-    <div>
-     <Route path='/' >
-      <AllMeetup />
-     </Route>
-     <Route path='/new-meetup' >
-      <NewMeetup />
-     </Route>
-     <Route path='/favourites' >
-      <Favourites />
-     </Route>
-    </div>
+    <>
+    <Routes>
+     
+      <Route exact path='/' element = { <AllMeetup />}  ></Route> 
+      <Route path='/new-meetup' element = {   <NewMeetup />}  >
+     
+      </Route>
+      <Route path='/favourites' element ={ <Favourites />} >
+       
+      </Route> 
+  
+    </Routes>
+    </>
+  
+    
   );
 }
 

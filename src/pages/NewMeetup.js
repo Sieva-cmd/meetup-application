@@ -1,8 +1,9 @@
+import React from "react";
 
-function NewMeetup(){
+const NewMeetup = () =>{
     return (
         <div>New Meetup</div>
     )
 }
 
-export default NewMeetup
+export default NewMeetup;
