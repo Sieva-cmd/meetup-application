@@ -4,14 +4,14 @@ import {Routes, Route } from 'react-router-dom';
 import AllMeetup from './pages/AllMeetup';
 import NewMeetup from './pages/NewMeetup';
 import Favourites from './pages/Favourites';
-import MainNavigation from './components/Layout/MainNavigation';
+import Layout from './components/Layout/Layout';
 
 
 
 const  App =() => {
   return (
     <>
-    <MainNavigation />
+  <Layout>
     <Routes>
      
       <Route exact path='/' element = {<AllMeetup />}  ></Route> 
@@ -23,6 +23,7 @@ const  App =() => {
       </Route> 
   
     </Routes>
+    </Layout>
     </>
   
     

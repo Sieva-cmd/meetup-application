@@ -1,6 +1,7 @@
 
-import { render } from "@testing-library/react"
+// import { render } from "@testing-library/react"
 import React from "react"
+import MeetupList from "../components/meetups/MeetupList";
 
 const DUMMY_DATA = [
     {
@@ -27,11 +28,9 @@ const AllMeetup = () =>{
     
         return (
             <div>
-                 <h1> All meetup</h1>
-                 {DUMMY_DATA.map((meetup) =>{
-                    return <li key ={meetup.id}>{meetup.title} </li>
-                 })}
-            
+                 <h1> All meetups</h1>
+
+              <MeetupList meetups={DUMMY_DATA} />
             
              </div>
     
